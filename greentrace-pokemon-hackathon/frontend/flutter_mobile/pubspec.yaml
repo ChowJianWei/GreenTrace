@@ -1,0 +1,20 @@
+name: greentrace_flutter
+version: 1.0.0+1
+description: Pokemon-style GreenTrace eco app.
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mapbox_gl: ^0.16.0
+  image_picker: ^1.0.7
+  http: ^1.2.0
+  flutter_dotenv: ^5.1.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env

@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f5fff6;
+  color: #1f2d1f;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background: #28c76f;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #ffc700;
+}
+
+.points {
+  background: #ffffff;
+  color: #28c76f;
+  padding: 8px 12px;
+  border-radius: 16px;
+  font-weight: bold;
+}
+
+.map-area {
+  position: relative;
+  flex: 1;
+  min-height: 400px;
+}
+
+.map-container {
+  height: 420px;
+}
+
+.status-card {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 2px solid #ffc700;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.floating-button {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  background: #28c76f;
+  color: #fff;
+  border: 2px solid #ffc700;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.task-list {
+  padding: 24px;
+}
+
+.task-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.task-card {
+  background: white;
+  border-radius: 20px;
+  padding: 16px;
+  border: 2px solid #4dc1ff;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.task-card h3 {
+  margin-top: 0;
+  color: #28c76f;
+}
+
+.task-points {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #ffc700;
+}
+
+.monster-marker {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #28c76f;
+  border: 3px solid #ffc700;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+.monster-marker.toilet {
+  background: #4dc1ff;
+}
